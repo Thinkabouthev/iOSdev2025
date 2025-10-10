@@ -102,6 +102,9 @@ func problem6_Fibonacci(n: Int) {
     print(fibonacci(n))
 }
 
+problem6_Fibonacci(n: 10)
+
+
 //Problem 7: Grade Calculator
 func grades(students: [String: Int]) {
     let scores = Array(students.values)
@@ -115,6 +118,8 @@ func grades(students: [String: Int]) {
     }
 }
 
+grades(students: ["Dariya": 90, "Aigerim": 85, "Alina": 100])
+
 //Problem 8: Palindrome Checker
 func isPalindrome(_ text: String) -> Bool {
     let cleaned = text.lowercased().filter { $0.isLetter }
@@ -123,6 +128,7 @@ func isPalindrome(_ text: String) -> Bool {
 func problem8_Palindrome(text: String) {
     print(isPalindrome(text))
 }
+problem8_Palindrome(text: "Hello") 
 
 //Problem 9: Simple Calculator
 func problem9_Calculator(a: Double, b: Double, op: String) {
@@ -140,6 +146,8 @@ func problem9_Calculator(a: Double, b: Double, op: String) {
     }
 }
 
+problem9_Calculator(a: 10, b: 5, op: "+")
+
 //Problem 10: Unique Characters
 func hasUniqueCharacters(_ text: String) -> Bool {
     var set: Set<Character> = []
@@ -152,3 +160,5 @@ func hasUniqueCharacters(_ text: String) -> Bool {
 func problem10_Unique(text: String) {
     print(hasUniqueCharacters(text))
 }
+
+problem10_Unique(text: "Dariya")

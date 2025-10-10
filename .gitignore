@@ -1,0 +1,6 @@
+*.playground/
+*.xcuserstate
+xcuserdata/
+DerivedData/
+build/
+.DS_Store
