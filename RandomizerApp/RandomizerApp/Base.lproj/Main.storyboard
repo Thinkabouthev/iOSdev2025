@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RandomizerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="GSy-qp-RGx">
+                                <rect key="frame" x="-66" y="-7" width="500" height="867"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4XB-wz-AX0">
+                                <rect key="frame" x="96.666666666666686" y="684" width="200" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="H2Q-f7-Yld"/>
+                                    <constraint firstAttribute="width" constant="200" id="iwU-db-Xas"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Random cat for good day"/>
+                                <connections>
+                                    <action selector="randomizeTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ThU-Ka-QSE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca8-TC-wUo">
+                                <rect key="frame" x="20" y="534" width="353" height="33.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" systemColor="systemBrownColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCy-3z-vmh">
+                                <rect key="frame" x="36" y="575.66666666666663" width="321" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="cat1" translatesAutoresizingMaskIntoConstraints="NO" id="FZQ-HB-5HP">
+                                <rect key="frame" x="46.666666666666657" y="218" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="11t-Wj-56f"/>
+                                    <constraint firstAttribute="height" constant="300" id="adu-oW-XE9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="4XB-wz-AX0" secondAttribute="bottom" constant="40" id="3YR-x6-F1Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4XB-wz-AX0" secondAttribute="bottom" constant="50" id="4eA-6U-sl1"/>
+                            <constraint firstItem="ca8-TC-wUo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5U2-Nl-X1g"/>
+                            <constraint firstItem="tCy-3z-vmh" firstAttribute="top" secondItem="ca8-TC-wUo" secondAttribute="bottom" constant="7.9999999999998863" id="5iQ-jy-z3J"/>
+                            <constraint firstItem="tCy-3z-vmh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9hW-Rx-qcZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ca8-TC-wUo" secondAttribute="trailing" constant="20" id="F6R-tc-NgD"/>
+                            <constraint firstItem="4XB-wz-AX0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QSt-nJ-sV0"/>
+                            <constraint firstItem="4XB-wz-AX0" firstAttribute="top" relation="greaterThanOrEqual" secondItem="tCy-3z-vmh" secondAttribute="bottom" constant="30" id="cPI-El-TSk"/>
+                            <constraint firstItem="ca8-TC-wUo" firstAttribute="top" secondItem="FZQ-HB-5HP" secondAttribute="bottom" constant="16" id="lmF-Lc-Chf"/>
+                            <constraint firstItem="FZQ-HB-5HP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mJp-gf-JFh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tCy-3z-vmh" secondAttribute="trailing" constant="20" id="mgf-Qk-5XE"/>
+                            <constraint firstItem="ca8-TC-wUo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ozC-au-ruJ"/>
+                            <constraint firstItem="FZQ-HB-5HP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="sxg-sF-qjd"/>
+                            <constraint firstItem="tCy-3z-vmh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="yDk-mR-OHg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="catImageView" destination="FZQ-HB-5HP" id="MyA-6v-KG3"/>
+                        <outlet property="descriptionLabel" destination="tCy-3z-vmh" id="TFJ-wq-0Hf"/>
+                        <outlet property="titleLabel" destination="ca8-TC-wUo" id="Y8h-qF-31y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5.343511450381679" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="562" height="1000"/>
+        <image name="cat1" width="480" height="454"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
